@@ -1,6 +1,6 @@
 {
   "name": "@kinde-oss/kinde-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generic Node implementation for verifying Kinde bearer tokens",
   "author": {
     "name": "Kinde",
@@ -40,6 +40,6 @@
   ],
   "private": false,
   "dependencies": {
-    "@kinde-oss/kinde-node-auth-utils": "^0.0.2"
+    "@kinde-oss/kinde-node-auth-utils": "^0.0.4"
   }
 }

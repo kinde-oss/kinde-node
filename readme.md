@@ -1,6 +1,6 @@
 # @kinde-oss/kinde-node
 
-Kinde JWT verification for Node Express APIs.
+Generic Node implementation for verifying Kinde bearer tokens
 
 ## Install
 
