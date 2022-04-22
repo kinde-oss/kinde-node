@@ -1,4 +1,4 @@
-const {authToken, getPem} = require('@kinde-oss/kinde-node-auth-utils');
+const {getPem, authToken} = require('@kinde-oss/kinde-node-auth-utils').default;
 
 const kindeNode = async (domain) => {
   const pem = await getPem(domain);
@@ -6,7 +6,7 @@ const kindeNode = async (domain) => {
   return (req, callback) => {
     const authHeader = req.headers.authorization;
     // Remove 'Bearer ' prefix
-    const token = authHeader && authHeader.split(" ")[1];
+    const token = authHeader && authHeader.split(' ')[1];
 
     return authToken(token, pem, (err, userString) => {
       const user = err ? {} : JSON.parse(userString);
@@ -16,4 +16,3 @@ const kindeNode = async (domain) => {
 };
 
 module.exports = kindeNode;
-
