@@ -1,6 +1,6 @@
 {
   "name": "@kinde-oss/kinde-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generic Node implementation for verifying Kinde bearer tokens",
   "author": {
     "name": "Kinde",
